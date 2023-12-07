@@ -335,7 +335,7 @@ ul {
     text-decoration: none!important;
     background-color: transparent;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
     overflow: hidden;
     -webkit-transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out,-webkit-box-shadow .2s ease-in-out;
     transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out;
@@ -399,10 +399,10 @@ ul {
     height: fit-content;
     width: 99%;
     color: var(--tutor-body-color);
-    /* display: flex; */
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
+    align-items: column;
 }
 .courses{
     margin: 0;
@@ -510,7 +510,53 @@ ul {
     cursor: pointer;
     transition: color 200ms ease-in-out,background-color 200ms ease-in-out,border-color 200ms ease-in-out;
 }
-.coursesection button{
-    align-self: center;
-    justify-self: center;
+.coursebutton{
+    width: 100%;
+    /* display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    justify-content: right; */
+}
+.coursebutton a{
+    padding: 0 45%;
+    /* display: block;
+    justify-content: center;
+    justify-self: right; */
+}
+footer{
+    display: inline-flex;
+    justify-content: space-between;
+    background: var(--footer-bottom-bg-color);
+    padding-bottom: 20px;
+    padding-top: 20px;
+    box-sizing: border-box;
+    color: var(--footer-bottom-text-color);
+    /* width: 100%; */
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* padding-right: 10px;
+    padding-left: 10px; */
+
+    /* color: rgba(10,8,58,0.7); */
+    /* color: #fff;
+    font-family: 'Inter',sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase; */
+    /* font-size: var(--h5-font-size); */
+    /* font-size: 24px;
+    line-height: 1.2em !important;
+    letter-spacing: 4px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    line-height: 1;
+    position: relative; */
+    /* display: block; */
+    /* font-size: 0.83em; */
+    /* font-weight: bold; */
+}
+.copyright{
+    margin-left: 20px;
+    align-self: end;
 }
