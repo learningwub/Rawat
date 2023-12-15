@@ -5,26 +5,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- 	<base href="learningwub.github.io/"> -->
+	<link href='/fonts/fonts.googleapis.com/Inter.css' rel='stylesheet'>
+	<link href='/fonts/fonts.googleapis.com/Sora.css' rel='stylesheet'>
+	<link rel="stylesheet" href="/style.css">
 	<link rel="stylesheet" href="contact.css">
 	<title>CONTACT US</title>
 </head>
 <body>
-	<!-- HEADER NAV BAR -->
-	<header>
-		<nav id="h-nav">
-			<!-- logo -->
-			<a href="">Logo here</a>
-			<ul id="nav-opt">
-				<a href="courses.html">Course</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
-				<a href="featured.html">Featured</a>
-			</ul>
-			<a class='gs-btn' href="">Getting Started</a>
-		</nav>
-	</header>
-
-
+<nav class="nav">
+	<h1 class="navlogo clickable">Rawat</h1>
+	<ul class="navlinks">
+		<a href="courses.html"><li class="navlink">Courses</li></a>
+		<a href="about.html"><li class="navlink">About</li></a>
+		<a href="contact.html"><li class="navlink">Contact</li></a>
+		<a href="featured.html"><li class="navlink">featured</li></a>
+	</ul>
+	<button class="navbutton clickable" onclick="alert('works!')">Getting Started</button>
+</nav>
 	<!-- CONTENT BODY -->
 	<div class="container">
 		<div id="topic">
@@ -75,19 +72,9 @@
         <a class='gs-btn' href="">Send Message</a>
     </div>
 
-    <!-- footer -->
-	<footer>
-		<div id="foot-area">
-			<p>Learning often happens in classrooms but it doesn't have to.</p>
-		</div>
-		<div id="social-logo">
-			<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-			<a href=""><i class="fa-brands fa-twitter"></i></a>
-			<a href=""><i class="fa-brands fa-instagram"></i></a>
-		</div>
-		<div id="copy-rights">
-			&copy; All rights reserved.
-		</div>
-	</footer>
+<footer>
+	<!-- <span>By Suraj, Saurabh, Prathish</span> -->
+	<span class="copyright">© All rights reserved.</span>
+</footer>
 </body>
 </html>

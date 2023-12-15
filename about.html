@@ -3,39 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- 	<base href="learningwub.github.io/"> -->
+	<link href='/fonts/fonts.googleapis.com/Inter.css' rel='stylesheet'>
+    <link href='/fonts/fonts.googleapis.com/Sora.css' rel='stylesheet'>
 	<link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="/style.css">
 	<title>About Us</title>
 </head>
 <body>
-	<!-- HEADER NAV BAR -->
-	<header>
-		<nav id="h-nav">
-			<!-- logo -->
-			<a href="">Rawat</a>
-			<ul id="nav-opt">
-				<a href="courses.html">Course</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
-				<a href="featured.html">Featured</a>
-			</ul>
-			<a id='gs-btn' href="">Getting Started</a>
-		</nav>
-	</header>
+<nav class="nav">
+	<h1 class="navlogo clickable">Rawat</h1>
+	<ul class="navlinks">
+		<a href="courses.html"><li class="navlink">Courses</li></a>
+		<a href="about.html"><li class="navlink">About</li></a>
+		<a href="contact.html"><li class="navlink">Contact</li></a>
+		<a href="featured.html"><li class="navlink">featured</li></a>
+	</ul>
+	<button class="navbutton clickable" onclick="alert('works!')">Getting Started</button>
+</nav>
 
 
 	<!-- CONTENT BODY -->
 	<div class="container">
 		<div id="topic">
-			<h3>ABOUT</h3>
+			<h3>ABOUT Us</h3>
 			<br>
-			<h2>Hello, I am Suraj</h2>
+			<h2>Hello, We are Rawat</h2>
 		</div>
 	</div>
 	<div class="container">
 		<div class="text-area">
-			<p>Welcome to <b>RAWAT Tutor's Point</b>, where knowledge meets inspiration! We are thrilled to have you embark on a journey of learning, growth, and discovery with us.<br><br>
+			<p>Welcome to <b>RAWAT Point</b>, where knowledge meets inspiration! We are thrilled to have you embark on a journey of learning, growth, and discovery with us.<br><br>
 				At RAWAT Tutor's Point, we believe that education is the key to unlocking boundless possibilities. Whether you are a student, educator, or a lifelong learner, our platform is designed to empower you with the tools and resources needed to succeed in a rapidly evolving world.<br><br>
 				Our mission is to create a dynamic and inclusive online learning environment that fosters curiosity, critical thinking, and a passion for lifelong learning. We understand that each learner is unique, so we offer a diverse range of courses, tutorials, and resources to cater to different interests, skill levels, and learning styles.<br><br>
 				Explore our user-friendly platform, where you can engage in interactive lessons, connect with a community of like-minded learners, and stay updated on the latest developments in your field of interest. Whether you are pursuing a specific academic goal, enhancing your professional skills, or simply indulging your curiosity, RAWAT Tutor's Point is your gateway to a world of knowledge.<br><br>
@@ -56,18 +54,9 @@
 		</div>
 	</div>
 
-	<footer>
-		<div id="foot-area">
-			<p>Learning often happens in classrooms but it doesn't have to.</p>
-		</div>
-		<div id="social-logo">
-			<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-			<a href=""><i class="fa-brands fa-twitter"></i></a>
-			<a href=""><i class="fa-brands fa-instagram"></i></a>
-		</div>
-		<div id="copy-rights">
-			&copy; All rights reserved.
-		</div>
-	</footer>
+<footer>
+	<!-- <span>By Suraj, Saurabh, Prathish</span> -->
+	<span class="copyright">© All rights reserved.</span>
+</footer>
 </body>
 </html>

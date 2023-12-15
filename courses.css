@@ -1,193 +1,54 @@
 *{
     margin:0;
-
 }
 a{
     text-decoration: none;
 }
-/* HEADER AREA */
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 78px;
-    width: 100%;
-    background-color: #FFFFFF;
-    border-bottom: 1px solid #57586E11;
-}
-#h-nav{
-    /* background-color: red; */
-    width: 85%;
-    height: 77px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#h-nav a{
-    padding: 5;
-    font-size: 1.1rem;
-    font-weight: 200;
-    font-family:monospace;
-}
-#nav-opt{
-    width: 300px;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 5px;
-    position: relative;
-}
-#nav-opt a{
-    color: #57586E;
-}
-
-#gs-btn{
-    padding: 12px 28px;
-    color: #FFFFFF;
-    background-color: #1753ff;
-    border-radius: 50px;
-}
-#gs-btn:hover{
-    opacity: 0.8;
-}
-
-
-
-/* CONTENT BOX */
-.container{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    /* height:400px; */
-}
-
-/* heading */
+/* Landing Heading */
 #topic{
-    width: 750px;
-    margin: 90px 0 90px 0;
-}
+    height: 50dvh;
+    width: 100%;
+    margin: auto;
 
-h3{
+    display: flex;
+    flex-direction: column;
+    gap: 7%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    line-height: 1.14em;
+}
+#topic h3{
     letter-spacing: 2px;
     text-align: center;
-    font-size: 1rem;
-    font-family: sans-serif;
+    font-size: 16px;
+    font-family: 'Inter',sans-serif;
     color: #0A083A;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 100%;
 }
-h2{
+#topic h1{
+    height: fit-content;
+    line-height: 100%;
     text-align: center;
     font-size: 70px;
-    font-family: sans-serif;
+    font-family: Sora;
     color: #0A083B;
+    overflow: hidden;
 }
 /* BOX COURSE */
-.flex{
+/* .flex{
     margin: 190px 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-}
-
-.coursecard{
-    /* height: 100%; */
-    margin: 5px;
-    width: 507px;
-    /* height: 800px; */
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    /* flex: 1 3 1; */
-
-    background-color: #fff;
-    border: 1px solid #57586E4a;
-    position: relative;
-    border-radius: 6px;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-}
-.courseimage{
-    /* background-color: black; */
-    border-style: none;
-    width: 100%;
-    height: 285px;
-    /* background: url("course_img1.jpg"); */
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-.courseinfo{
-    width: fit-content;
-    height: fit-content;
-    padding: 20px;
-}
-.rating{
-    display: flex;
-    align-items: center;
-}
-.rating img,span{
-    padding-right: 20px;
-    transform: scale(1.5);
-}
-.rating:first-child{
-    padding-left: 10px;
-}
-.title{
-    color: #0A083B;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: normal;
-    line-height: 1.6;
-    font-weight: 500;
-    font-size: 1.25rem;
-    font-size: 44px;
-}
-.duration{
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-    margin-top: 12px;
-}
-.duration img{
-    size: 200%;
-}
-.enroll{
-    /* background-color: #1e1e2c; */
-    border-top: 1px solid #57586E4a;
-    padding: 16px 20px;
-    border-radius: 0 0 5px 5px;
-}
-.enrollbutton{
-    padding: 6px 12px;
-    border: 1px solid #1753ff;
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    display: inline-flex;
-    align-items: center;
-    font-weight: 400;
-    line-height: 1.4;
-    color: #1753ff;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    background-color: rgba(0,0,0,0);
-    padding: 8px 16px;
-    font-size: 16px;
-    border-radius: 6px;
-    box-sizing: border-box;
-    cursor: pointer;
-    transition: color 200ms ease-in-out,background-color 200ms ease-in-out,border-color 200ms ease-in-out;
-}
-
-
-
+} */
 /* content text */
-
-.text-area{
+/* .text-area{
     margin: 90px 0 90px 0;
     width:750px;
     color: #0A083B;
@@ -196,19 +57,18 @@ h2{
     text-align:center;
     font-size: 19px;
     line-height: 30px;
-}
-
+} */
 /* Education */
-.edu-title{
+/* .edu-title{
     margin: 90px 0 -20px 0;
     text-align: center;
     font-size: 40px;
     font-family: sans-serif;
     color: #0A083B;
-}
+} */
 
 /* FOOTER BAR */
-footer{
+/* footer{
     margin-top: 90px;
     display: grid;
     justify-content: center;
@@ -248,4 +108,4 @@ footer{
     height: 100px;
     width: 100%;
     justify-content: start;
-}
+} */

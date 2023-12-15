@@ -3,27 +3,24 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <!-- 	<base href="learningwub.github.io/"> -->
+	<link href='/fonts/fonts.googleapis.com/Inter.css' rel='stylesheet'>
+	<link href='/fonts/fonts.googleapis.com/Sora.css' rel='stylesheet'>
 	<link rel="stylesheet" href="featured.css">
+	<link rel="stylesheet" href="style.css">
 	<title>Featured Course</title>
 </head>
 <body>
-	<!-- HEADER NAV BAR -->
-	<header>
-		<nav id="h-nav">
-			<!-- logo -->
-			<a href="">Rawat</a>
-			<ul id="nav-opt">
-				<a href="courses.html">Course</a>
-				<a href="about.html">About</a>
-				<a href="contact.html">Contact</a>
-				<a href="featured.html">Featured</a>
-			</ul>
-			<a class='gs-btn' href="">Getting Started</a>
-		</nav>
-	</header>
-
+<nav class="nav">
+	<h1 class="navlogo clickable">Rawat</h1>
+	<ul class="navlinks">
+		<a href="courses.html"><li class="navlink">Courses</li></a>
+		<a href="about.html"><li class="navlink">About</li></a>
+		<a href="contact.html"><li class="navlink">Contact</li></a>
+		<a href="featured.html"><li class="navlink">featured</li></a>
+	</ul>
+	<button class="navbutton clickable" onclick="alert('works!')">Getting Started</button>
+</nav>
 
 	<!-- CONTENT BODY -->
 	<!-- TITILE -->
@@ -37,7 +34,7 @@
 	<!-- VIDEO INTRO -->
 	<div class="container">
 		<video autoplay width="920" height="470" controls loop>
-			<source src="photography.mp4" type="video/mp4">
+			<source src="coursemedia/photography.mp4" type="video/mp4">
 		</video>
 	</div>
 	<!-- COURSE ENROLL -->
@@ -58,7 +55,7 @@
 
 	</div>
 	<!-- ABOUT COURSE SECTION -->
-	<div class="container">
+	<div class="container1">
 		<h3 id="edu-title">About Course</h3>
 	</div>
 
@@ -67,7 +64,7 @@
 			<p>Do you ever scroll through images of beautiful lettering on Instagram and think to yourself that if you could do the same? Use tutor to build custom, fully functional websites quickly — and without learning how to code. Break free from restrictive templates, regain your creative freedom, and bring your best creations.</p>
 		</div>
 	</div>
-	<div class="container">
+	<div class="container1">
 		<h4 id="mat-title">Material Includes</h4>
 	</div>
 	<div class="container">
@@ -93,18 +90,9 @@
 		</div>
 	</div>
 
-	<footer>
-		<div id="foot-area">
-			<p>Learning often happens in classrooms but it doesn't have to.</p>
-		</div>
-		<div id="social-logo">
-			<a href=""><i class="fa-brands fa-facebook-f"></i></a>
-			<a href=""><i class="fa-brands fa-twitter"></i></a>
-			<a href=""><i class="fa-brands fa-instagram"></i></a>
-		</div>
-		<div id="copy-rights">
-			&copy; All rights reserved.
-		</div>
-	</footer>
+<footer>
+	<!-- <span>By Suraj, Saurabh, Prathish</span> -->
+	<span class="copyright">© All rights reserved.</span>
+</footer>
 </body>
 </html>
