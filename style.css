@@ -11,13 +11,6 @@
     overflow-x: hidden;
 }
 :root {
-    --qubely-color-1: #696CFF;
-    --qubely-color-2: #04C3EC;
-    --qubely-color-3: #363636;
-    --qubely-color-4: #BBC0D4;
-    --qubely-color-5: #FFFFFF;
-}
-:root {
     --default-color: #ffffff;
     --body-font: Inter;
     --heading-font: Sora;
@@ -36,18 +29,6 @@
     --menu-link-color: #57586E;
     --menu-link-color-trans: #ffffff;
     --body-font-weight: 400;
-    --h1-font-weight: 700;
-    --h2-font-weight: 700;
-    --h3-font-weight: 700;
-    --h4-font-weight: 700;
-    --h5-font-weight: 700;
-    --h6-font-weight: 700;
-    --h1-text-transform: none;
-    --h2-text-transform: none;
-    --h3-text-transform: none;
-    --h4-text-transform: none;
-    --h5-text-transform: none;
-    --h6-text-transform: none;
     --primary-menu-bg-color: #ffffff;
     --sticky-menu-bg-color: rgba(4, 42, 132, 0.7);
     --cta-background-color: #175cff;
@@ -118,20 +99,6 @@
     --h6-font-lineheight-mobile: 1.5em;
     --body-font-lineheight-tablet: 1.5em;
     --body-font-lineheight-mobile: 1.5em;
-    --widget-title-font-size: 18px;
-    --widget-title-font-size-tablet: 16px;
-    --widget-title-font-size-mobile: 16px;
-    --widget-title-line-height: 1.7em;
-    --widget-title-line-height-tablet: 1.7em;
-    --widget-title-line-height-mobile: 1.7em;
-    --widget-text-font-weight: 400;
-    --widget-text-transform: none;
-    --widget-text-font-size: 16px;
-    --widget-text-font-size-tablet: 16px;
-    --widget-text-font-size-mobile: 16px;
-    --widget-text-line-height: 1.7em;
-    --widget-text-line-height-tablet: 1.7em;
-    --widget-text-line-height-mobile: 1.7em;
 }
 :root {
     --headerDefaultBg: var(--primary-menu-bg-color);
@@ -153,17 +120,85 @@
     --navCartColor: var(--cart-color);
     --navCartColorTrans: var(--cart-color-trans);
 }
-:root {
-    --tutor-color-primary: #3e64de;
-    --tutor-color-primary-rgb: 62, 100, 222;
-    --tutor-color-primary-hover: #395bca;
-    --tutor-color-primary-hover-rgb: 57, 91, 202;
-    --tutor-body-color: #212327;
-    --tutor-body-color-rgb: 33, 35, 39;
-    --tutor-border-color: #cdcfd5;
-    --tutor-border-color-rgb: 205, 207, 213;
-    --tutor-color-gray: #e3e5eb;
-    --tutor-color-gray-rgb: 227, 229, 235;
+.close{
+    background-color: #000;
+}
+#loginscreen{
+    display: none;
+    background-color: #000000bf;
+    top: 0px;
+    height: 100dvh;
+    width: 100dvw;
+
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+.logincard{
+    background-color: #fff;
+    border-radius: 2%;
+    width:  428.67px;
+    height: 498.38px;
+    margin: 15dvh 35dvw; 
+    z-index: 2;
+
+    line-height: 1.6em;
+    font-size: 16px;
+    font-family: Inter;
+    color: #212327;
+    font-weight: 500;
+
+    position: fixed;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.logincard form{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    /* flex: 1 1 auto; */
+    height: 283.98px;
+}
+.logincard input{
+    /* display: block; */
+    height: 39.73px;
+    width: 364.67px;
+    padding: 8px 16px;
+    border-radius: 5px;
+}
+.logincard label{
+    justify-content: center;
+    align-items: center;
+}
+.rememberme {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;;
+    color: #212327;
+}
+#keepme{
+    height: 24px;
+    width: 24px;
+}
+.signin{
+    width: 100%;
+    padding: 12px 28px;
+    font-style: normal;
+    font-family: inherit;
+    display: inline-block;
+    text-align: center;
+
+    text-transform: var(--cta-font-transform);
+    font-weight: var(--cta-font-weight);
+    font-size: var(--cta-font-size);
+    line-height: var(--cta-font-lineheight);
+    color: var(--headerBtnColor);
+    background: #3e64de;
+    border: var(--cta-border-width) solid var(--cta-border-color);
 }
 body {
     font-family: var(--body-font);
@@ -203,6 +238,10 @@ ul {
     grid-gap: 30px;
     align-items: center;
     justify-content: space-between;
+/*     
+    position: sticky;
+    top: 0px;
+    z-index: 2; */
 }
 .navlinks {
     display: inline-flex;
@@ -399,7 +438,7 @@ ul {
     padding: 100px 0;
     height: fit-content;
     width: 100%;
-    color: var(--tutor-body-color);
+    color: #212327;
 
     display: flex;
     flex-direction: column;
@@ -425,7 +464,7 @@ ul {
     height: 490px;
 
     background-color: #fff;
-    border: 1px solid var(--tutor-border-color);
+    border: 1px solid #cdcfd5;
     position: relative;
     border-radius: 6px;
 
@@ -455,7 +494,7 @@ ul {
     justify-content: space-between;
 }
 .stars {
-    color: var(--tutor-body-color);
+    color: #212327;
     font-weight: 500;
 }
 .stars:last-child{
@@ -475,7 +514,7 @@ ul {
     font-family: var(--heading-font);
     font-weight: 500;
     font-size: 36px;    
-    color: var(--tutor-body-color);
+    color: #212327;
     line-height: 1.6;
 }
 .stats{  
@@ -489,7 +528,7 @@ ul {
     margin-bottom: 20px;
     margin-top: 12px;
     
-    color: var(--tutor-body-color);
+    color: #212327;
     font-size: 14px;
     font-weight: 500;
 }
@@ -508,13 +547,13 @@ ul {
 .enroll{
     /* background-color: #1e1e2c; */
     height: 68.4px;
-    border-top: 1px solid var(--tutor-border-color);
+    border-top: 1px solid #cdcfd5;
     padding: 16px 20px;
     border-radius: 0 0 5px 5px;
 }
 .enrollbutton{
     padding: 6px 12px;
-    border: 1px solid var(--tutor-color-primary);
+    border: 1px solid #3e64de;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -522,7 +561,7 @@ ul {
     align-items: center;
     font-weight: 400;
     line-height: 1.4;
-    color: var(--tutor-color-primary);
+    color: #3e64de;
     text-align: center;
     text-decoration: none;
     vertical-align: middle;
